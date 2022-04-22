@@ -1,6 +1,7 @@
 <script>
   import World from './World.svelte';
 	const units = 10;
+  const size = 60;
 
   const objects = [
     null,
@@ -36,13 +37,22 @@
   let time = 0;
   let started = false;
 
+  const worldSize = objects.length * size;
+  const gameSize = units * size;
+  let interval = null
+
   const start = function() {
-    setInterval(step, 10);
+    interval = setInterval(step, 5);
     started = true;
   }
 
   const step = function() {
-    time = time + 2;
+    if (time < worldSize - gameSize) {
+      time += 1;
+    } else {
+      clearInterval(interval);
+      alert('You win!');
+    }
   }
 </script>
 
