@@ -20,7 +20,8 @@ $size: 35px;
 .object,
 .player {
   font-size: $size;
-  line-height: 0.9;
+  line-height: 1;
+  margin-bottom: -.1rem;
   bottom: 0;
 }
 
