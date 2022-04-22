@@ -34,9 +34,11 @@
 
   let playerY = 200;
   let time = 0;
+  let started = false;
 
   const start = function() {
     setInterval(step, 10);
+    started = true;
   }
 
   const step = function() {
@@ -45,7 +47,7 @@
 </script>
 
 <div class="center">
-  <button on:click={start}>Start</button>
+  <button disabled={started} on:click={start}>Start</button>
 </div>
 
 <div class="game">
