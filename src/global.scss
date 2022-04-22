@@ -12,8 +12,7 @@ $size: 35px;
   // transition: left .1s linear;
   position: absolute;
   // https://css-tricks.com/background-patterns-simplified-by-conic-gradients/#checkerboard
-  background: repeating-conic-gradient(rgb(226, 241, 255)
- 0% 25%, rgb(199, 228, 255) 0% 50%) 50%/ #{2 * $size 2 * $size};
+  background: repeating-conic-gradient(rgb(226, 241, 255) 0% 25%, rgb(199, 228, 255) 0% 50%) 50%/ #{2 * $size 2 * $size};
   display: flex;
 }
 

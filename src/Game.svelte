@@ -31,6 +31,22 @@
     null,
     null,
     null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    ['🏁'],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    ['💯'],
   ]
 
   let speed = 0.2
@@ -43,7 +59,7 @@
   const reset = function() {
     time = 0;
     playerX = size;
-    playerY = 200;
+    playerY = 0;
     started = false;
   }
   reset();
