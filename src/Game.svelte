@@ -101,13 +101,10 @@
 </div>
 
 <div class="game">
-  <World {objects} {time} />
   <div class="player" style="bottom: {playerY}px; left: {playerX}px">🏃🏻‍♂️</div>
+  <World {objects} {time} />
 </div>
 
 <style>
-  .center {
-    text-align: center;
-  }
   button { font-size: 2rem; }
 </style>

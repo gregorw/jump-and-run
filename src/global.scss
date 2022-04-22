@@ -1,6 +1,4 @@
-h1 {
-  text-align: center
-}
+h1, .center { text-align: center }
 
 $units: 10;
 $size: 35px;
@@ -21,12 +19,11 @@ $size: 35px;
   font-size: $size;
   line-height: 1;
   transform: translateY(.08em);
-  bottom: 0;
 }
 
 .player {
   position: absolute;
-  transform: scaleX(-1);
+  transform:  translateY(.08em) scaleX(-1);
   z-index: 1;
 }
 
