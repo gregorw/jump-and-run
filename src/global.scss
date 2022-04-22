@@ -21,7 +21,7 @@ $size: 35px;
 .player {
   font-size: $size;
   line-height: 1;
-  margin-bottom: -.1rem;
+  transform: translateY(.08em);
   bottom: 0;
 }
 
@@ -35,9 +35,8 @@ $size: 35px;
   width: $size;
   display: flex;
   flex-direction: column;
-  -webkit-justify-content: flex-end;
-  align-items: flex-end;
-  -webkit-align-items: flex-end;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .game {
