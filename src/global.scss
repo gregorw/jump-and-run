@@ -1,4 +1,4 @@
-body {
+h1 {
   text-align: center
 }
 
@@ -10,34 +10,36 @@ $size: 60px;
   height: $units * $size;
   border: 1px solid red;
   position: relative;
-  left: -1 * $size;
+  left: 0 * $size;
   transition: left .1s linear;
   position: absolute;
   // https://css-tricks.com/background-patterns-simplified-by-conic-gradients/#checkerboard
   background: repeating-conic-gradient(rgb(226, 241, 255)
  0% 25%, rgb(199, 228, 255) 0% 50%) 50%/ #{2 * $size 2 * $size};
+  display: flex;
 }
 
 .object,
 .player {
-  position: absolute;
   font-size: $size;
   line-height: 0.9;
   bottom: 0;
 }
 
 .player {
+  position: absolute;
   transform: scaleX(-1);
   z-index: 1;
   left: $size;
 }
 
-.object {
-  left: 7 * $size;
-
-  &.two {
-    bottom: $size;
-  }
+.column {
+  width: $size;
+  display: flex;
+  flex-direction: column;
+  -webkit-justify-content: flex-end;
+  align-items: flex-end;
+  -webkit-align-items: flex-end;
 }
 
 .game {
