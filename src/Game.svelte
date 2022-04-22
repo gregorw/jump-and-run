@@ -33,16 +33,27 @@
     null,
   ]
 
-  let playerY = 200;
-  let time = 0;
-  let started = false;
+  let speed = 0.2
+
+  let playerY;
+  let playerX;
+  let time;
+  let started;
+
+  const reset = function() {
+    time = 0;
+    playerX = size;
+    playerY = 200;
+    started = false;
+  }
+  reset();
 
   const worldSize = objects.length * size;
   const gameSize = units * size;
   let interval = null
 
   const start = function() {
-    interval = setInterval(step, 5);
+    interval = setInterval(step, 1 / speed);
     started = true;
   }
 
@@ -52,7 +63,20 @@
     } else {
       clearInterval(interval);
       alert('You win!');
+      walkHome();
     }
+  }
+
+  const walkHome = function() {
+    const walk = function() {
+      playerX = playerX + 1;
+      if (playerX < gameSize) {
+        setTimeout(walk, .5 / speed);
+      } else {
+        reset();
+      }
+    }
+    walk();
   }
 </script>
 
@@ -62,7 +86,7 @@
 
 <div class="game">
   <World {objects} {time} />
-  <div class="player" style="bottom: {playerY}px">🏃🏻‍♂️</div>
+  <div class="player" style="bottom: {playerY}px; left: {playerX}px">🏃🏻‍♂️</div>
 </div>
 
 <style>
