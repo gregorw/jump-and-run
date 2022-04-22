@@ -1,7 +1,7 @@
 <script>
   import World from './World.svelte';
 	const units = 10;
-  const size = 60;
+  const size = 35;
 
   const objects = [
     null,
