@@ -30,6 +30,7 @@ Your local copy should now be running at http://localhost:5000/supermario/.
 
 ## Challenges
 
+1. Can you change the player icon to something that represents you better?
 1. Can you create your own world?
 1. Can you make the player jump?
 1. Can you detect collisions and display “Game Over”?
