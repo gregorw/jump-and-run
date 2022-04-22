@@ -41,7 +41,7 @@
   let started;
 
   const reset = function() {
-    time = 440;
+    time = 0;
     playerX = size;
     playerY = 200;
     started = false;
