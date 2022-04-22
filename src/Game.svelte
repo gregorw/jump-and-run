@@ -32,8 +32,10 @@
     null,
   ]
 
+  let playerY = 180;
 </script>
 
 <div class="game">
   <World {objects} />
+  <div class="player" style="bottom: {playerY}px">🏃🏻‍♂️</div>
 </div>
