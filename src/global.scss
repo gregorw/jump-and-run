@@ -9,7 +9,7 @@ $size: 60px;
   width: 10 * $units * $size;
   height: $units * $size;
   position: relative;
-  transition: left .1s linear;
+  // transition: left .1s linear;
   position: absolute;
   // https://css-tricks.com/background-patterns-simplified-by-conic-gradients/#checkerboard
   background: repeating-conic-gradient(rgb(226, 241, 255)

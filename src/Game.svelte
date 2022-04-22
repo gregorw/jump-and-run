@@ -33,10 +33,14 @@
   ]
 
   let playerY = 200;
-  let time = 300;
+  let time = 0;
 
   const start = function() {
+    setInterval(step, 10);
+  }
 
+  const step = function() {
+    time = time + 2;
   }
 </script>
 
