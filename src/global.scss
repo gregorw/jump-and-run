@@ -8,9 +8,7 @@ $size: 60px;
 .world {
   width: 10 * $units * $size;
   height: $units * $size;
-  border: 1px solid red;
   position: relative;
-  left: 0 * $size;
   transition: left .1s linear;
   position: absolute;
   // https://css-tricks.com/background-patterns-simplified-by-conic-gradients/#checkerboard
@@ -48,6 +46,5 @@ $size: 60px;
   width: $units * $size;
   height: $units * $size;
   margin: 2rem auto;
-  overflow-y: hidden;
-  overflow-x: scroll;
+  overflow: hidden;
 }
