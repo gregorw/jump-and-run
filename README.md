@@ -28,4 +28,9 @@ yarn dev
 
 Your local copy should now be running at http://localhost:5000/supermario/.
 
+## Challenges
+
+1. Can you make the player jump?
+2. Can you detect collisions and display “Game Over”?
+
 Have fun coding and don’t hesitate to contact me when you are about to learn to program and need some help.
