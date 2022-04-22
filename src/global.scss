@@ -1,0 +1,51 @@
+body {
+  text-align: center
+}
+
+$units: 10;
+$size: 60px;
+
+.world {
+  width: 10 * $units * $size;
+  height: $units * $size;
+  border: 1px solid red;
+  position: relative;
+  left: -1 * $size;
+  transition: left .1s linear;
+  position: absolute;
+  // https://css-tricks.com/background-patterns-simplified-by-conic-gradients/#checkerboard
+  background: repeating-conic-gradient(rgb(226, 241, 255)
+ 0% 25%, rgb(199, 228, 255) 0% 50%) 50%/ #{2 * $size 2 * $size};
+}
+
+.object,
+.player {
+  position: absolute;
+  font-size: $size;
+  line-height: 0.9;
+  bottom: 0;
+}
+
+.player {
+  transform: scaleX(-1);
+  z-index: 1;
+  left: $size;
+}
+
+.object {
+  left: 7 * $size;
+
+  &.two {
+    bottom: $size;
+  }
+}
+
+.game {
+  position: relative;
+  border: 1px solid black;
+  width: $units * $size;
+  height: $units * $size;
+  margin: 2rem auto;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
