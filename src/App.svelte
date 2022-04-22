@@ -5,7 +5,7 @@
 <main>
 	<h1>Supermario</h1>
 	<Game />
-	<aside style="text-align: center;">
+	<aside class="center">
 		<p>Please find the source code on <a href="https://github.com/gregorw/supermario">Github</a>.</p>
 		<p>
 			Can you change the player icon to something that represents you better?<br>
